@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/public.css">
+
+    <style>
+        .shop {
+            padding: 0 50px;
+        }
+
+        .shop-happy {
+            height: 80px;
+            border-bottom: 1px solid #ccc;
+            display: table-cell;
+            vertical-align: middle;
+        }
+
+        .shop-logo {
+            height: 70px;
+
+            /* display: flex;
+            justify-content: space-between;
+            align-items: center; */
+            /* display: inline-block; */
+            float: left;
+            line-height: 70px;
+        }
+
+        .shop-alt {
+            font-size: 14px;
+            float: right;
+            line-height: 70px;
+            margin-left: 800px;
+        }
+
+        .shop-price {
+            font-size: 18px;
+            color: gray;
+            margin-left: 10px;
+        }
+
+        .shop-order {
+            display: inline-block;
+            width: 100px;
+            height: 30px;
+            background-color: #666;
+            text-align: center;
+            line-height: 30px;
+            color: #fff;
+        }
+
+        .shop-thead {
+            font-size: 12px;
+            border-top: 1px solid #ccc;
+            padding: 15px 20px;
+        }
+
+        .shop-row {
+            width: 100%;
+            text-align: left;
+            display: table;
+
+        }
+
+        .shop-row li {
+            display: table-cell;
+            vertical-align: middle;
+        }
+
+        .col-checkbox {
+            width: 5%;
+        }
+
+        .checkall {
+            /* -webkit-appearance: none; */
+            border: 1px solid #9b9b9b;
+            border-radius: 0;
+            text-align: center;
+            vertical-align: middle;
+            margin-right: 5px;
+        }
+
+        .col-produce-img {
+            width: 6%;
+        }
+
+        .col-produce-name {
+            width: 20%;
+        }
+
+        .col-produce-price {
+            width: 12%;
+        }
+
+        .col-produce-num {
+            width: 14%;
+        }
+
+        .col-produce-total {
+            width: 14%;
+            font-weight: 600;
+        }
+
+        .col-operate {
+            width: 8%;
+        }
+
+        .shop-goods {
+            /* width:100%; */
+            height: 100px;
+            border: 1px solid #ccc;
+            padding: 50px 30px;
+        }
+
+        .goods-pro {
+            display: inline-block;
+            margin-left: 20px;
+        }
+
+        .goods-img {
+            width: 100px;
+            height: 100px;
+        }
+
+        .goods-p {
+            display: inline-block;
+            margin-left: 30px;
+        }
+
+        .goods-tit {
+            font-size: 16px;
+        }
+
+        .goods-size {
+            font-size: 12px;
+            color: #ccc;
+            margin-top: 20px;
+        }
+
+        .goods-unit {
+            display: inline-block;
+            margin-left: 150px;
+        }
+
+        .goods-change {
+            display: inline-block;
+            margin-left: 100px;
+        }
+
+        .goods-total {
+            display: inline-block;
+            margin-left: 120px;
+            font-weight: 700;
+            color: indianred;
+        }
+
+        .goods-delete {
+            margin-left: 130px;
+        }
+        .goods-delete2 {
+            margin-left: 130px;
+        }
+    </style>
+</head>
+
+<body>
+    <header></header>
+    <div class="shop">
+        <div class="shop-happy">
+            <p class="shop-logo">幸福商城购物车</p>
+            <p class="shop-alt">总金额 ￥<span class="shop-price zongjia">00.00</span>元 <span class="shop-order">下单结算</span>
+            </p>
+        </div>
+
+        <div class="shop-thead">
+            <ul class="shop-row">
+                <li class="col-checkbox">
+                    <input type="checkbox" class="checkall" name="parent" onclick="selectAll()">
+                    <label>全选</label>
+                </li>
+                <li class="col-produce-img"> </li>
+                <li class="col-produce-name">商品信息</li>
+                <li class="col-produce-price">单价</li>
+                <li class="col-produce-num">数量</li>
+                <li class="col-produce-total">合计</li>
+                <li class="col-operate">操作</li>
+            </ul>
+        </div>
+
+        <div class="shop-goods first">
+            <div class="goods-pro">
+                <input type="checkbox" class="goods-all" name="child">
+                <img src="img/page1-10.jpg" alt="" class="goods-img">
+                <div class="goods-p">
+                    <p class="goods-tit">海盐脆脆芒芒</p>
+                    <p class="goods-size">规格：1磅</p>
+                </div>
+                <div class="goods-unit">￥<span class="danjia">168.00</span>
+                    元</div>
+                <div class="goods-change">
+                    <button class="goods-reduce oadd1">-</button><span class="goods-num shuliang">0</span><button
+                        class="goods-add oadd2">+</button>
+                </div>
+                <div class="goods-total">￥<span class="xiaoji">168</span>.00元</div>
+                <button class="goods-delete">X</button>
+
+            </div>
+        </div>
+
+        <div class="shop-goods">
+            <div class="goods-pro">
+                <input type="checkbox" class="goods-all" name="child">
+                <img src="img/page1-1.jpg" alt="" class="goods-img">
+                <div class="goods-p">
+                    <p class="goods-tit">小团圆火锅蛋糕</p>
+                    <p class="goods-size">规格：1磅</p>
+                </div>
+                <div class="goods-unit">￥<span class="danjia">228.00</span>
+                    元</div>
+                <div class="goods-change">
+                    <button class="goods-reduce oadd1">-</button><span class="goods-num shuliang">0</span><button
+                        class="goods-add oadd2">+</button>
+                </div>
+                <div class="goods-total">￥<span class="xiaoji">228</span>.00元</div>
+                <button class="goods-delete2">X</button>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script>
+
+
+    function jisuan() {
+        for (let i = 0; i < $(".xiaoji").length; i++) {
+            let a = $(".danjia").eq(i).html();
+            let b = $(".shuliang").eq(i).html();
+            $(".xiaoji").eq(i).html(a * b);
+        }
+        let c = 0;
+        for (let i = 0; i < $(".xiaoji").length; i++) {
+            c += Number($(".xiaoji").eq(i).html());
+        }
+        $(".zongjia").html(c);
+        // let d = 0;
+        // for (let i = 0; i < $(".shuliang").length; i++) {
+        //     d += Number($(".shuliang").eq(i).html());
+        // }
+        // $(".zongjianshu").html(d);
+    }
+
+    function dianji() {
+        for (let i = 0; i < $(".oadd2").length; i++) {
+            $(".oadd2").eq(i).click(function () {
+                let a = $(".shuliang").eq(i).html();
+                $(".shuliang").eq(i).html(Number(a) + 1);
+                jisuan();
+            })
+        }
+        for (let i = 0; i < $(".oadd1").length; i++) {
+            $(".oadd1").eq(i).click(function () {
+                if (Number($(".shuliang").eq(i).html()) > 0) {
+                    let a = $(".shuliang").eq(i).html();
+                    $(".shuliang").eq(i).html(Number(a) - 1);
+                    jisuan();
+                }
+            })
+        }
+    }
+
+    dianji();
+
+
+    $(".goods-delete").click(function () {
+        $(".goods-delete").parent().parent().remove();
+        jisuan();
+        dianji();
+    });
+
+    $(".goods-delete2").click(function () {
+        $(".goods-delete2").parent().parent().remove();
+        jisuan();
+        dianji();
+    });
+    
+    // 全选/全不选
+    function selectAll() {
+        let obj = document.getElementsByName("child");
+        let selected = document.getElementsByName("parent");
+        for (k in obj) {
+            obj[k].checked = selected[0].checked;
+        }
+    }
+
+</script>

@@ -1,0 +1,214 @@
+<!-- 头部 -->
+<div class="header-con">
+    <div class="logo">
+        <img src="img/logo.png" alt="">
+    </div>
+    <!-- 地址 -->
+    <div class="location">
+        <img src="img/header-3.png" alt="">
+        <p>北京市</p>
+    </div>
+    <div class="h-city">
+        <p class="change-city">切换城市</p>
+        <div class="header-search">
+            <!-- 搜索城市 -->
+            <div class="header-sear">
+                <h2 class="header-sear-c">搜索城市</h2>
+                <input type="text" placeholder="请输入城市名称">
+            </div>
+            <!-- 热门城市 -->
+            <div class="header-city">
+                <h2 class="header-city-hot">热门城市</h2>
+                <div class="header-city-main">
+                    <p>深圳市</p>
+                    <p>广州市</p>
+                    <p>上海市</p>
+                    <p>北京市</p>
+                    <p>天津市</p>
+                    <p>重庆市</p>
+                </div>
+            </div>
+            <hr>
+            <!-- 选择区域 -->
+            <h2 class="header-area">选择区域</h2>
+            <div class="header-area-x">
+                <div>
+                    <select>
+                        <option value="">陕西省</option>
+                        <option value="">北京</option>
+                        <option value="">新疆省</option>
+                        <option value="">山西省</option>
+                        <option value="">湖南省</option>
+                        <option value="">福建省</option>
+                        <option value="">湖北省</option>
+                        <option value="">河南省</option>
+                        <option value="">四川省</option>
+                        <option value="">广东省</option>
+                    </select>
+                    <select>
+
+                    </select>
+                </div>
+            </div>
+            <p class="header-warm">温馨提示：若购买中更换收货城市，可能导致购物车内容被清空！</p>
+        </div>
+    </div>
+    <!-- list -->
+    <ul class="list">
+        <li class="list-list1"><a href="">全部</a></li>
+        <li class="list-list2"><a href="">蛋糕</a>
+            <div class="none1">
+                <div class="none1-1">
+                    <a href="allcakes.html"><img src="img/header1-1.jpg" alt="">
+                        <span>全部蛋糕</span></a>
+                </div>
+                <div class="none1-2">
+                    <a href="allcakes.html"><img src="img/header1-2.png" alt="">
+                        <span>鲜果蛋糕</span></a>
+                </div>
+                <div class="none1-3">
+                    <a href="allcakes.html"><img src="img/header1-3.png" alt="">
+                        <span>芝士慕斯蛋糕</span></a>
+                </div>
+                <div class="none1-4">
+                    <a href="allcakes.html"><img src="img/header1-4.png" alt="">
+                        <span>混合蛋糕</span></a>
+                </div>
+                <div class="none1-5">
+                    <a href="allcakes.html"><img src="img/header1-5.png" alt="">
+                        <span>多层蛋糕</span></a>
+                </div>
+                <div class="none1-6">
+                    <a href="allcakes.html"><img src="img/header1-6.png" alt="">
+                        <span>栗子巧克力蛋糕</span></a>
+                </div>
+                <div class="none1-7">
+                    <a href="allcakes.html"><img src="img/header1-7.png" alt="">
+                        <span>节日蛋糕</span></a>
+                </div>
+            </div>
+        </li>
+        <li class="list-list3"><a href="">下午茶</a>
+            <div class="none2">
+                <a href="">
+                    <img src="img/header2-1.png" alt="">
+                    <span>下午茶系列</span>
+                </a>
+            </div>
+        </li>
+        <li class="list-list4"><a href="">手信</a>
+            <div class="none3">
+                <a href="">
+                    <img src="img/header3-1.png" alt="">
+                    <span>全国包邮</span>
+                </a>
+            </div>
+        </li>
+        <li class="list-list5"><a href="">团购预约</a></li>
+        <li class="list-list6"><a href="">关于我们</a></li>
+        <li class="list-list7"><a href="">开店咨询</a></li>
+    </ul>
+    <!-- 图标 -->
+    <div class="icon">
+        <a href="" class="icon1"><img src="img/header-4.jpg" alt="">
+        </a>
+
+        <a href="shopping.html" class="icon2"><img src="img/header-5.jpg" alt=""> </a>
+
+
+        <a  class="icon3"><img src="img/header-6.jpg" alt="" id="tubiao3">
+        </a>
+        <div class="form_div">
+        <form action="login.php" method="" id="form">
+            <div class="form-close">X</div>
+            <h3>账号登录</h3>
+            <input type="text" placeholder="手机号码" name="usertel" class="shouji">
+            <span class="form-shouji"></span>
+            <input type="text" placeholder="密码" name="userpwd" class="sjma">
+            <span class="form-sjma"></span>
+            <div class="tishi">
+                <div class="tishi-l">
+                    <input type="checkbox" class="rember">&nbsp;&nbsp;记住我
+                </div>
+                <span class="tishi-r">忘记密码</span>
+            </div>
+            <input type="submit" value="登录" class="form-logo">
+            <p><a href="">手机号快速登录</a></p>
+            <p><a href="register.html">注册新账号</a></p>
+        </form>
+    </div>
+    </div>
+</div>
+<script>
+    // 切换城市
+    let oCity = document.querySelector(".change-city");
+    let oSearch = document.querySelector(".header-search");
+    oCity.onclick = function (evt) {
+        var e = evt || event;
+        e.stopPropagation ? e.stopPropagation() : e.cancelBubble = true;
+        oSearch.style.display = "block";
+    }
+    oSearch.onclick = function (evt) {
+        var e = evt || event;
+        e.stopPropagation ? e.stopPropagation() : e.cancelBubble = true;
+    }
+    document.onclick = function () {
+        oSearch.style.display = "none";
+    }
+
+
+    //  let oTu = document.getElementById("tubiao3");
+
+    $(".form_div").hide();
+    let oTu = document.querySelector(".icon3");
+    let oF = document.getElementById("form");
+    let oClose = document.querySelector(".form-close");
+    let oform  = document.querySelector(".form_div");
+    oTu.onclick = function () {
+        // alert(1);
+    //   alert(oform);
+        // var e = evt || event;
+        // e.stopPropagation ? e.stopPropagation() : e.cancelBubble = true;
+        $(".form_div").show();
+    }
+    oClose.onclick = function () {
+        $(".form_div").hide();
+    }
+
+
+
+
+
+
+            // var oShouji = document.querySelector(".shouji");
+            // var oFs = document.querySelector(".form-shouji");
+
+            // oShouji.onblur = function () {
+            //     var reg = /^(13|15|18)\d{9}$/;
+            //     if (reg.test(this.value)) {
+            //         oFs.innerHTML = "正确";
+            //         oFs.style.color = "red";
+            //     } else {
+            //         oFs.innerHTML = "错误";
+            //         oFs.style.color = "red";
+            //     }
+            // }
+
+            // // 密码
+            // var oSjma = document.querySelector(".sjma");
+            // var oFpwd = document.querySelector(".form-sjma");
+
+            // oSjma.onblur = function () {
+            //     var reg = /^\w{8,20}$/
+            //     if (reg.test(this.value)) {
+            //         oFpwd.innerHTML = "正确";
+            //         oFpwd.style.color = "red";
+            //     } else {
+            //         oFpwd.innerHTML = "错误";
+            //         oFpwd.style.color = "red";
+            //     }
+            // }
+
+
+
+</script>

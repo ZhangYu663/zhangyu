@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/allcakes.css">
+    <link rel="stylesheet" href="css/public.css">
+    <style>
+           #form {
+            width: 500px;
+            height: 600px;
+            border: 1px solid #ccc;
+            position: absolute;
+            right: 0;
+            top: 70px;
+            background-color: #fff;
+            animation: form 1s;
+            overflow: hidden;
+            z-index:1;
+            
+        }
+     .form_div{
+         display: none;
+         height:300px;
+     }
+
+        @keyframes form {
+            from {
+                /* width:0; */
+                right: -500px;
+            }
+
+            to {
+                right: 0;
+            }
+        }
+
+        /* .form-con{
+    width:400px;
+} */
+        /* button {
+            width: 20px;
+            height: 20px;
+            text-align: center;
+            margin-left: 480px;
+        } */
+        .form-close {
+            margin-left: 477px;
+            text-align: center;
+            border: 1px solid #ccc;
+        }
+
+        h3 {
+            text-align: center;
+            margin-top: 50px;
+            font-size: 20px;
+        }
+
+        .shouji,
+        .sjma {
+            width: 400px;
+            height: 50px;
+            border: 1px solid #ccc;
+            margin-top: 50px;
+            font-size: 18px;
+            margin-left: 50px;
+        }
+
+        .tishi {
+            width: 400px;
+            /* margin-left:50px; */
+            height: 50px;
+            margin-left: 50px;
+            /* line-height: 50px; */
+        }
+
+        /* .tishi-l{
+    float: left;
+} */
+        .rember{
+            margin-top:20px;
+        }
+       .tishi-l{
+           display: inline-block;
+           
+       }
+        .tishi-l input {
+            /* float: left; */
+            width: 15px;
+            height: 15px;
+        }
+
+        .tishi-r {
+            float: left;
+            /* margin-left:340px; */
+        }
+
+        /* .tishi-l button{
+    float: left;
+}
+.tishi-l p{
+    float: left;
+}
+.tishi-l span{
+   
+} */
+        .tishi-r {
+            float: left;
+            margin-left: 300px;
+            color: orange;
+            font-size: 14px;
+
+        }
+
+        .form-shouji {
+            /* display: block; */
+            /* width: 500px; */
+        }
+
+        .form-sjma {
+            /* display: block; */
+            /* width: 500px; */
+        }
+
+        .form-logo{
+            width: 400px;
+            height: 50px;
+            border: 1px solid #ccc;
+            font-size:16px;
+            margin-left: 50px;
+        }
+        #form p:nth-of-type(1) {
+            height: 30px;
+            margin-left: 200px;
+            margin-top: 50px;
+        }
+
+        #form p:nth-of-type(2) {
+            height: 30px;
+            margin-left: 210px;
+        }
+
+        #form p a {
+            font-size: 16px;
+            color: orange;
+        }
+    </style>
+</head>
+
+<body>
+    <header></header>
+    <!-- 全部蛋糕 -->
+    <div class="all-cakes">
+        <div class="list1">
+            <a href="">
+                <div class="img">
+                    <img src="img/page1-1.jpg" alt="" class="img-img">
+                    <div class="mask">
+                        <p class="mask-p"> 熊出没（起风款）</p>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="in">
+                        <p class="title">熊出没（起风款）</p>
+                        <p class="price">￥198元</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="list2">
+            <a href="">
+                <div class="img">
+                    <img src="img/page1-1.jpg" alt="" class="img-img">
+                    <div class="mask">
+                        <p class="mask-p"> 熊出没（起风款）</p>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="in">
+                        <p class="title">熊出没（起风款）</p>
+                        <p class="price">￥198元</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="list3">
+            <a href="">
+                <div class="img">
+                    <img src="img/page1-2.jpg" alt="" class="img-img">
+                    <div class="mask">
+                        <p class="mask-p"> 熊出没（起风款）</p>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="in">
+                        <p class="title">熊出没（起风款）</p>
+                        <p class="price">￥198元</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="list4">
+            <a href="">
+                <div class="img">
+                    <img src="img/page1-3.jpg" alt="" class="img-img">
+                    <div class="mask">
+                        <p class="mask-p"> 熊出没（起风款）</p>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="in">
+                        <p class="title">熊出没（起风款）</p>
+                        <p class="price">￥198元</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="list5">
+            <a href="">
+                <div class="img">
+                    <img src="img/page1-4.jpg" alt="" class="img-img">
+                    <div class="mask">
+                        <p class="mask-p"> 熊出没（起风款）</p>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="in">
+                        <p class="title">熊出没（起风款）</p>
+                        <p class="price">￥198元</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="list6">
+            <a href="">
+                <div class="img">
+                    <img src="img/page1-5.jpg" alt="" class="img-img">
+                    <div class="mask">
+                        <p class="mask-p"> 熊出没（起风款）</p>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="in">
+                        <p class="title">熊出没（起风款）</p>
+                        <p class="price">￥198元</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="list7">
+            <a href="">
+                <div class="img">
+                    <img src="img/page1-6.jpg" alt="" class="img-img">
+                    <div class="mask">
+                        <p class="mask-p"> 熊出没（起风款）</p>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="in">
+                        <p class="title">熊出没（起风款）</p>
+                        <p class="price">￥198元</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="list8">
+            <a href="">
+                <div class="img">
+                    <img src="img/page1-7.jpg" alt="" class="img-img">
+                    <div class="mask">
+                        <p class="mask-p"> 熊出没（起风款）</p>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="in">
+                        <p class="title">熊出没（起风款）</p>
+                        <p class="price">￥198元</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="list9">
+            <a href="">
+                <div class="img">
+                    <img src="img/page1-8.jpg" alt="" class="img-img">
+                    <div class="mask">
+                        <p class="mask-p"> 熊出没（起风款）</p>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="in">
+                        <p class="title">熊出没（起风款）</p>
+                        <p class="price">￥198元</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="list10">
+            <a href="">
+                <div class="img">
+                    <img src="img/page1-9.jpg" alt="" class="img-img">
+                    <div class="mask">
+                        <p class="mask-p"> 熊出没（起风款）</p>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="in">
+                        <p class="title">熊出没（起风款）</p>
+                        <p class="price">￥198元</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="list11">
+            <a href="">
+                <div class="img">
+                    <img src="img/page1-10.jpg" alt="" class="img-img">
+                    <div class="mask">
+                        <p class="mask-p"> 熊出没（起风款）</p>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="in">
+                        <p class="title">熊出没（起风款）</p>
+                        <p class="price">￥198元</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="list12">
+            <a href="">
+                <div class="img">
+                    <img src="img/page1-11.jpg" alt="" class="img-img">
+                    <div class="mask">
+                        <p class="mask-p"> 熊出没（起风款）</p>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="in">
+                        <p class="title">熊出没（起风款）</p>
+                        <p class="price">￥198元</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="list13">
+            <a href="">
+                <div class="img">
+                    <img src="img/page1-12.jpg" alt="" class="img-img">
+                    <div class="mask">
+                        <p class="mask-p"> 熊出没（起风款）</p>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="in">
+                        <p class="title">熊出没（起风款）</p>
+                        <p class="price">￥198元</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="list14">
+            <a href="">
+                <div class="img">
+                    <img src="img/page1-13.jpg" alt="" class="img-img">
+                    <div class="mask">
+                        <p class="mask-p"> 熊出没（起风款）</p>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="in">
+                        <p class="title">熊出没（起风款）</p>
+                        <p class="price">￥198元</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="list15">
+            <a href="">
+                <div class="img">
+                    <img src="img/page1-14.jpg" alt="" class="img-img">
+                    <div class="mask">
+                        <p class="mask-p"> 熊出没（起风款）</p>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="in">
+                        <p class="title">熊出没（起风款）</p>
+                        <p class="price">￥198元</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="list16">
+            <a href="">
+                <div class="img">
+                    <img src="img/page1-15.jpg" alt="" class="img-img">
+                    <div class="mask">
+                        <p class="mask-p"> 熊出没（起风款）</p>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="in">
+                        <p class="title">熊出没（起风款）</p>
+                        <p class="price">￥198元</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="list17">
+            <a href="">
+                <div class="img">
+                    <img src="img/page1-16.jpg" alt="" class="img-img">
+                    <div class="mask">
+                        <p class="mask-p"> 熊出没（起风款）</p>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="in">
+                        <p class="title">熊出没（起风款）</p>
+                        <p class="price">￥198元</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="list18">
+            <a href="">
+                <div class="img">
+                    <img src="img/page1-17.jpg" alt="" class="img-img">
+                    <div class="mask">
+                        <p class="mask-p"> 熊出没（起风款）</p>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="in">
+                        <p class="title">熊出没（起风款）</p>
+                        <p class="price">￥198元</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="list19">
+            <a href="">
+                <div class="img">
+                    <img src="img/page1-18.jpg" alt="" class="img-img">
+                    <div class="mask">
+                        <p class="mask-p"> 熊出没（起风款）</p>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="in">
+                        <p class="title">熊出没（起风款）</p>
+                        <p class="price">￥198元</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="list20">
+            <a href="">
+                <div class="img">
+                    <img src="img/page1-19.jpg" alt="" class="img-img">
+                    <div class="mask">
+                        <p class="mask-p"> 熊出没（起风款）</p>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="in">
+                        <p class="title">熊出没（起风款）</p>
+                        <p class="price">￥198元</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="list21">
+            <a href="">
+                <div class="img">
+                    <img src="img/page1-20.jpg" alt="" class="img-img">
+                    <div class="mask">
+                        <p class="mask-p"> 熊出没（起风款）</p>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="in">
+                        <p class="title">熊出没（起风款）</p>
+                        <p class="price">￥198元</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="list22">
+            <a href="">
+                <div class="img">
+                    <img src="img/page1-21.jpg" alt="" class="img-img">
+                    <div class="mask">
+                        <p class="mask-p"> 熊出没（起风款）</p>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="in">
+                        <p class="title">熊出没（起风款）</p>
+                        <p class="price">￥198元</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="list23">
+            <a href="">
+                <div class="img">
+                    <img src="img/page1-22.jpg" alt="" class="img-img">
+                    <div class="mask">
+                        <p class="mask-p"> 熊出没（起风款）</p>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="in">
+                        <p class="title">熊出没（起风款）</p>
+                        <p class="price">￥198元</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="list24">
+            <a href="">
+                <div class="img">
+                    <img src="img/page1-23.jpg" alt="" class="img-img">
+                    <div class="mask">
+                        <p class="mask-p"> 熊出没（起风款）</p>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="in">
+                        <p class="title">熊出没（起风款）</p>
+                        <p class="price">￥198元</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="list25">
+            <a href="">
+                <div class="img">
+                    <img src="img/page1-24.jpg" alt="" class="img-img">
+                    <div class="mask">
+                        <p class="mask-p"> 熊出没（起风款）</p>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="in">
+                        <p class="title">熊出没（起风款）</p>
+                        <p class="price">￥198元</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="list26">
+            <a href="">
+                <div class="img">
+                    <img src="img/page1-25.jpg" alt="" class="img-img">
+                    <div class="mask">
+                        <p class="mask-p"> 熊出没（起风款）</p>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="in">
+                        <p class="title">熊出没（起风款）</p>
+                        <p class="price">￥198元</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="list27">
+            <a href="">
+                <div class="img">
+                    <img src="img/page1-26.jpg" alt="" class="img-img">
+                    <div class="mask">
+                        <p class="mask-p"> 熊出没（起风款）</p>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="in">
+                        <p class="title">熊出没（起风款）</p>
+                        <p class="price">￥198元</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="list28">
+            <a href="">
+                <div class="img">
+                    <img src="img/page1-27.jpg" alt="" class="img-img">
+                    <div class="mask">
+                        <p class="mask-p"> 熊出没（起风款）</p>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="in">
+                        <p class="title">熊出没（起风款）</p>
+                        <p class="price">￥198元</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="list29">
+            <a href="">
+                <div class="img">
+                    <img src="img/page1-28.jpg" alt="" class="img-img">
+                    <div class="mask">
+                        <p class="mask-p"> 熊出没（起风款）</p>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="in">
+                        <p class="title">熊出没（起风款）</p>
+                        <p class="price">￥198元</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="list30">
+            <a href="">
+                <div class="img">
+                    <img src="img/page1-29.jpg" alt="" class="img-img">
+                    <div class="mask">
+                        <p class="mask-p"> 熊出没（起风款）</p>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="in">
+                        <p class="title">熊出没（起风款）</p>
+                        <p class="price">￥198元</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="list31">
+            <a href="">
+                <div class="img">
+                    <img src="img/page1-30.jpg" alt="" class="img-img">
+                    <div class="mask">
+                        <p class="mask-p"> 熊出没（起风款）</p>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="in">
+                        <p class="title">熊出没（起风款）</p>
+                        <p class="price">￥198元</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="list32">
+            <a href="">
+                <div class="img">
+                    <img src="img/page1-31.jpg" alt="" class="img-img">
+                    <div class="mask">
+                        <p class="mask-p"> 熊出没（起风款）</p>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="in">
+                        <p class="title">熊出没（起风款）</p>
+                        <p class="price">￥198元</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="list33">
+            <a href="">
+                <div class="img">
+                    <img src="img/page1-32.jpg" alt="" class="img-img">
+                    <div class="mask">
+                        <p class="mask-p"> 熊出没（起风款）</p>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="in">
+                        <p class="title">熊出没（起风款）</p>
+                        <p class="price">￥198元</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="list34">
+            <a href="">
+                <div class="img">
+                    <img src="img/page1-33.jpg" alt="" class="img-img">
+                    <div class="mask">
+                        <p class="mask-p"> 熊出没（起风款）</p>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="in">
+                        <p class="title">熊出没（起风款）</p>
+                        <p class="price">￥198元</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="list35">
+            <a href="">
+                <div class="img">
+                    <img src="img/page1-34.jpg" alt="" class="img-img">
+                    <div class="mask">
+                        <p class="mask-p"> 熊出没（起风款）</p>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="in">
+                        <p class="title">熊出没（起风款）</p>
+                        <p class="price">￥198元</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="list36">
+            <a href="">
+                <div class="img">
+                    <img src="img/page1-35.jpg" alt="" class="img-img">
+                    <div class="mask">
+                        <p class="mask-p"> 熊出没（起风款）</p>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="in">
+                        <p class="title">熊出没（起风款）</p>
+                        <p class="price">￥198元</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="list37">
+            <a href="">
+                <div class="img">
+                    <img src="img/page1-36.jpg" alt="" class="img-img">
+                    <div class="mask">
+                        <p class="mask-p"> 熊出没（起风款）</p>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="in">
+                        <p class="title">熊出没（起风款）</p>
+                        <p class="price">￥198元</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="list38">
+            <a href="">
+                <div class="img">
+                    <img src="img/page1-37.jpg" alt="" class="img-img">
+                    <div class="mask">
+                        <p class="mask-p"> 熊出没（起风款）</p>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="in">
+                        <p class="title">熊出没（起风款）</p>
+                        <p class="price">￥198元</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="list39">
+            <a href="">
+                <div class="img">
+                    <img src="img/page1-38.jpg" alt="" class="img-img">
+                    <div class="mask">
+                        <p class="mask-p"> 熊出没（起风款）</p>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="in">
+                        <p class="title">熊出没（起风款）</p>
+                        <p class="price">￥198元</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="list40">
+            <a href="">
+                <div class="img">
+                    <img src="img/page1-39.jpg" alt="" class="img-img">
+                    <div class="mask">
+                        <p class="mask-p"> 熊出没（起风款）</p>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="in">
+                        <p class="title">熊出没（起风款）</p>
+                        <p class="price">￥198元</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+       
+
+
+
+    </div>
+</body>
+
+</html>
+<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script>
+     $(function(){
+       $("header").load("public.html",function(){
+        var oShouji = document.querySelector(".shouji");
+            var oFs = document.querySelector(".form-shouji");
+
+            oShouji.onblur = function () {
+                var reg = /^(13|15|18)\d{9}$/;
+                if (reg.test(this.value)) {
+                    oFs.innerHTML = "正确";
+                    oFs.style.color = "red";
+                } else {
+                    oFs.innerHTML = "错误";
+                    oFs.style.color = "red";
+                }
+            }
+
+            // 密码
+            var oSjma = document.querySelector(".sjma");
+            var oFpwd = document.querySelector(".form-sjma");
+
+            oSjma.onblur = function () {
+                var reg = /^\w{8,20}$/
+                if (reg.test(this.value)) {
+                    oFpwd.innerHTML = "正确";
+                    oFpwd.style.color = "red";
+                } else {
+                    oFpwd.innerHTML = "错误";
+                    oFpwd.style.color = "red";
+                }
+            }
+       });
+   })
+</script>

@@ -1,0 +1,144 @@
+.regist{
+    overflow: auto;
+    background-color: #fff;
+    height: 100%;
+    width: 670px;
+    border:1px solid #ccc;
+}
+.regist-con{
+    margin: 79px auto 60px;
+    width: 510px;
+    height:720px;
+    font-size: 14px;
+}
+.regist-close{
+   margin-left:300px;
+}
+.regist-title{
+    text-align: center;
+    font-size: 21px;
+    color: #3d2d23;
+    display: block;
+    height: 56px;
+    /* line-height: 1; */
+}
+.regist-ipone{
+    margin: 18px 0 10px;
+}
+.regist-ipone-num{
+    border: solid 1px #bdbdbd;
+    transition: box-shadow ease-in-out .15s;
+    width: 100%;
+    padding: 0 10px;
+    font-size: 15px;
+    height: 50px;
+    line-height: 50px;
+}
+.regist-pwd{
+    margin-top:30px;
+}
+.regist-pwd-num{
+    border: solid 1px #bdbdbd;
+    transition: box-shadow ease-in-out .15s;
+    width: 100%;
+    padding: 0 10px;
+    font-size: 15px;
+    height: 50px;
+    line-height: 50px;
+}
+.regist-again{
+    margin-top:30px;
+}
+.regist-again-num{
+    border: solid 1px #bdbdbd;
+    transition: box-shadow ease-in-out .15s;
+    width: 100%;
+    padding: 0 10px;
+    font-size: 15px;
+    height: 50px;
+    line-height: 50px;
+}
+.regist-verification{
+    margin-top:30px;
+    height:50px;
+}
+.regist-verification-l{
+    padding: 0 10px;
+    width: 378px;
+    border: solid 1px #bdbdbd;
+    font-size: 15px;
+    height: 50px;
+    line-height: 50px;
+    float: left;
+}
+.regist-verification-r{
+    width:105px;
+    height:50px;
+    float: right;
+}
+.regist-get{
+   margin-top:15px;
+    
+}
+.regist-get-l{
+    border: solid 1px #bdbdbd;
+    transition: box-shadow ease-in-out .15s;
+    padding: 0 10px;
+    font-size: 15px;
+    height: 50px;
+    line-height: 50px;
+}
+.regist-get-r{
+    float: right;
+    border: solid 1px #bdbdbd;
+    color: #3d2d23;
+    background-color: #fff;
+    height: 50px;
+    font-size: 14px;
+    line-height: 50px;
+    width: 120px;
+}
+.read-agree{
+    margin-top:15px; 
+}
+.read-agree input{
+    width:10px;
+    height:10px;
+}
+.read-agree span{
+    font-size:14px;
+}
+.regist-agree{
+    width:330px;
+    height:50px;
+    font-size:16px;
+    margin-top:15px;
+    padding-left:200px;
+}
+.regist-first{
+    display: inline-block;
+    margin-top:50px;
+    color:orange;
+    height:50px;
+    width:510px;
+    text-align: center;
+}
+.regist-last{
+    display: inline-block;
+    color:orange;
+    height:50px;
+    width:510px;
+    text-align: center;
+}
+.regist-ipone-in{
+    display: block;
+    height:18px;
+}
+.regist-pwd-in{
+    display: block;
+    height:18px;
+}
+.regist-again-in{
+    display: block;
+    height:18px;
+}

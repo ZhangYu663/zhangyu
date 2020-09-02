@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <style>
+        #detail {
+            width: 930px;
+            height: 678px;
+            margin: 80px 105px 30px;
+        }
+
+        #detail-l {
+            float: left;
+            margin-left: 200px;
+        }
+
+        #small {
+            width: 200px;
+            height: 300px;
+            position: absolute;
+            top: 200px;
+            left: 150px;
+        }
+
+        #small img {
+            width: 200px;
+            height: 300px;
+            position: absolute;
+        }
+
+        #mask {
+            width: 100px;
+            height: 150px;
+            position: absolute;
+            display: none;
+            background-color: red;
+            opacity: 0.5;
+        }
+
+        #big {
+            width: 300px;
+            height: 450px;
+            position: absolute;
+            top: 100px;
+            left: 400px;
+            overflow: hidden;
+            display: none;
+        }
+
+        #big img {
+            width: 600px;
+            height: 900px;
+            position: absolute;
+        }
+
+        /* 右边 */
+        .detail-r {
+            width: 300px;
+            height: 678px;
+            background-color: tan;
+            margin-left: 500px;
+            padding: 0 10px;
+        }
+
+        .detail-r-title {
+            margin: 5px 5px;
+        }
+
+        .detail-r-price {
+            color: gold;
+            font-size: 16px;
+            height: 100px;
+            margin-top: 40px;
+        }
+
+        .detail-r-norms {
+            font-size: 12px;
+            height: 50px;
+            line-height: 50px;
+            border-bottom: 1px solid #999;
+        }
+
+        .detail-r-unit {
+            height: 16px;
+            font-size: 14px;
+            padding: 10px 0;
+            background-color: #ccc;
+            border-bottom: 1px solid #999;
+        }
+
+        .detail-r-num {
+            /* width: 50px; */
+            height: 100px;
+            /* line-height: 100px; */
+        }
+
+        .choose {
+            /* display: inline-block; */
+            float: left;
+            margin-top: 25px;
+        }
+
+        .choose-plus {
+            display: inline-block;
+        }
+
+        .choose-num {
+            float: left;
+            width: 50px;
+            height: 30px;
+            border: 1px solid #ccc;
+            margin-top: 20px;
+            margin-left: 20px;
+            text-align: center;
+            line-height: 30px;
+        }
+
+        .choose-sign {
+            float: left;
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+
+        .detail-buy {
+            border: 1px solid #000;
+            height: 50px;
+            text-align: center;
+            line-height: 50px;
+        }
+
+        .detail-buy a {
+            color: #000;
+        }
+
+        .detail-shop {
+            border: 1px solid #000;
+            height: 50px;
+            text-align: center;
+            line-height: 50px;
+            margin-top: 30px;
+        }
+
+        .detail-shop a {
+            color: #000;
+        }
+
+        .choose-add {
+            width: 10px;
+            height: 10px;
+            border: 1px solid #ccc;
+            line-height: 10px;
+            text-align: center;
+        }
+
+        .choose-reduce {
+            margin-top: 10px;
+            width: 10px;
+            height: 10px;
+            border: 1px solid #ccc;
+            line-height: 10px;
+            text-align: center;
+        }
+        .promise-l{
+            float: left;
+            font-size:12px;
+            margin-top:10px;
+        }
+        .promise-list{
+            float:left;
+            margin-left:70px;
+            font-size:12px;
+        }
+        .promise-list p{
+            height:20px;
+            line-height:20px;
+        }
+        .promise-list p span{
+            font-weight:bold;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 详情页 -->
+    <div id="detail">
+        <div id="detail-l">
+            <div id="small">
+                <img src="img/page1-10.jpg" alt="">
+                <div id="mask"></div>
+            </div>
+            <div id="big">
+                <img src="img/page1-10.jpg" alt="">
+            </div>
+        </div>
+        <!-- 右边 -->
+        <div class="detail-r">
+            <h2 class="detail-r-title">幸福先生 【H先生】</h2>
+            <div class="detail-r-price">￥228.00</div>
+            <div class="detail-r-norms">选择规格</div>
+            <div class="detail-r-unit">2磅</div>
+            <div class="detail-r-num">
+                <div class="choose">数量</div>
+                <div class="choose-plus">
+                    <div class="choose-num">1</div>
+                    <div class="choose-sign">
+                        <div class="choose-add"><a href="">+</a></div>
+                        <div class="choose-reduce"><a href="">-</a></div>
+                            
+                    </div>
+                </div>
+            </div>
+            <div class="detail-buy"><a href="shopping.html"> 立即购买</a></div>
+            <div class="detail-shop"><a href="shopping.html">加入购物车</a></div>
+            <!-- promise -->
+            <div class="promise">
+                <div class="promise-l">幸福承诺</div>
+                <div class="promise-list">
+                    <p><span>就敢退</span>实物不对版，退款不退货</p><br>
+                    <p><span>就敢减</span>约定时间！迟到一分钟减一元</p><br>
+                    <p><span>就敢送</span>迟到30分钟免费赠送</p><br>
+                    <p><span>就敢赔</span>早到或迟到60分钟以上，双倍赔付</p><br>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script>
+    // 放大镜
+    $("#small").mouseenter(function () {
+        $("#mask,#big").show();
+    }).mouseleave(function () {
+        $("#mask,#big").hide();
+    }).mousemove(function (e) {
+        let l = e.pageX - $(this).offset().left - $("#mask").width() * 0.5;
+        let t = e.pageY - $(this).offset().top - $("#mask").height() * 0.5;
+        if (l <= 0) {
+            l = 0;
+        }
+        if (l >= $(this).width() - $("#mask").width()) {
+            l = $(this).width() - $("#mask").width();
+        }
+        if (t <= 0) {
+            t = 0;
+        }
+        if (t >= $(this).height() - $("#mask").height()) {
+            t = $(this).height() - $("#mask").height();
+        }
+
+        $("#mask").css({
+            left: l,
+            top: t
+        })
+
+        let n = $("#big img").width() / $(this).width()
+        $("#big img").css({
+            left: -n * l,
+            top: -n * t
+        })
+    })
+</script>
